@@ -1,6 +1,7 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./navbar.css";
-import "../carrito/carrito";
+
 import Carrito from "../carrito/carrito";
 const Menu = () => {
   return (
@@ -9,29 +10,21 @@ const Menu = () => {
             <h1>PINFO</h1>
         </div>
       <ul className="ul">
-        <li>
-          <a href="www.google.com" className="menuItem">
-            Inicio
-          </a>
-        </li>
-        <li>
-          <a href="www.google.com" className="menuItem">
-            Productos
-          </a>
-        </li>
-        <li>
-          <a href="www.google.com" className="menuItem">
-            Servicios
-          </a>
-        </li>
-        <li>
-          <a href="www.google.com" className="menuItem">
-            Contacto
-          </a>
-        </li>
-      <li>
-        <Carrito/>   
-      </li>
+        <Link className="link" to="/">
+          Inicio
+        </Link>
+        <Link className="link" to="/productos">
+          Productos
+        </Link>
+        <Link className="link" to="/servicios">
+          Servicios
+        </Link>
+        <Link className="link" to="/contacto">
+          Contacto
+        </Link>
+        <Link className="link" to="/">
+          <Carrito/> 
+        </Link>
       </ul>
     </nav>
   );

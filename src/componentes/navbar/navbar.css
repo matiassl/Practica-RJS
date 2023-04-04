@@ -17,12 +17,9 @@
   align-items: center;
 }
 
-.nav .ul li {
+.nav .ul .link {
   display: inline-block;
   padding: 10px 20px;
-}
-
-.nav .ul li a {
   text-decoration: none;
   color: white;
 }
